@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio Webiste</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7bbcdd24b9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/SUANTIX-3.png" class="logo">
+                <ul id="menuBar">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Data Scientist</p>
+                <h1>Hi, I'm <span> Ali Sultan</span> <br>from Indonesia</h1>  
+            </div>
+        </div>
+    </div>
+
+    <!------------- About ---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/black-gua-2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dedicated Data Science enthusiast and technical writer, offering a unique blend of skills to transform complex data into actionable insights. With a strong foundation in Python, machine learning, and data analytics, my specialization is in crafting meticulous research papers and technical documentation. My hands-on experience as a Data Science Research Assistant and Assistant Laboratory Technician at Universitas Mercu Buana has honed my ability to conduct thorough research, optimize experiments, and develop innovative solutions like time series forecasting and brain tumor classification using advanced neural networks. Fluent in both English and Indonesian, I am committed to delivering high-quality, insightful, and impactful data-driven solutions to drive success in the dynamic field of data science.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links onclick=" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links onclick=" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Developing and Training Models</span><br>Developing Machine Learning Based Predictive Models for a variety of use-cases</li>
+                            <li><span>Python Backend Developer</span><br>Providing comprehensive solutions in data analysis, machine learning model development, and innovative web applications, all backed by robust coding and analytical expertise.</li>
+                            <li><span>Object Detection</span><br>Offering precise and efficient object detection services using advanced machine learning models to accurately identify and classify objects in images and videos</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Present</span><br>Part-Time Data Scientist</li>
+                            <li><span>2023 - Present</span><br>Research Associate At Universitas Mercu Buana</li>
+                            <li><span>2022 - 2023</span><br>Assistant Laboratory Technician At Universitas Mercu Buana</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2025</span><br>Universitas Mercu Buana - Indonesia</li>
+                            <li><span>2018 - 2020</span><br>Superior Group Of Colleges - Pakistan</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------services------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Python Backend Developer</h2>
+                        <p>As a Python backend developer, I deliver robust and scalable solutions in data processing, machine learning integration, and API development to enhance application performance and functionality.</p>
+                        <a href="https://wa.me/+6285219220152">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>Data Scientist</h2>
+                        <p>As a data scientist, I specialize in developing and training sophisticated machine learning models to extract actionable insights and drive data-driven decision-making.</p>
+                        <a href="https://wa.me/+6285219220152">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <h2>Research Paper and Journal Writing</h2>
+                        <p>My research paper and journal writing services are tailored to meet your specific needs, ensuring high-quality, accurate, and well-researched content. I offer a range of services, including Thesis Writing, Literature Reviews, Research Proposal Writing, and Technical Documentation, to support your research goals.
+                        </p>
+                        <a href="https://wa.me/+6285219220152">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <h2>Data Analysis</h2>
+                        <p>Transform your data into actionable insights with my data analysis services. I provide comprehensive data analysis, including data cleaning, visualization, and reporting, to help you make informed business decisions.</p>
+                        <a href="https://wa.me/+6285219220152">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/github-final.png" alt="">
+                    <div class="layer">
+                        <h3>GitHub</h3>
+                        <p>Explore my personal projects, created with passion and dedication. Find a variety of works showcasing my skills and interests.</p>
+                        <a href="https://github.com/sultan7557"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cricket-final.png" alt="">
+                    <div class="layer">
+                        <h3>Classification Of Batting Techniques Using VGG16, ResNet50 and EfficientNet</h3>
+                        <p>Using advanced convolutional neural networks such as VGG16, ResNet50, and EfficientNet, I specialize in the classification of cricket batting techniques. By leveraging these powerful models, I can accurately identify and categorize different shots, providing detailed analysis and insights. This expertise not only enhances the understanding of player performance but also drives improvements in coaching and strategy development.</p>
+                        <a href="https://inovasibsf.id/websitedasboardprojeck/Detailprojeck/index.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/brain-tumor-final.png" alt="">
+                    <div class="layer">
+                        <h3>Brain Tumor Classification Using ResNet and EfficientNet</h3>
+                        <p>Utilizing the powerful capabilities of ResNet and EfficientNet, I specialize in the accurate classification of brain tumors. By employing these advanced neural networks, I can distinguish between different types of tumors with high precision, enabling early diagnosis and targeted treatment strategies. This expertise ensures that medical professionals have access to reliable and detailed tumor classifications, ultimately enhancing patient care and outcomes.</p>
+                        <a href="https://github.com/sultan7557"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/QnA_final.png" alt="">
+                    <div class="layer">
+                        <h3>Question-Answer Generation, Feedback and Grading Using Microsoft Model Phi-2</h3>
+                        <p>Leveraging Microsoft's advanced Phi-2 model, I generated question-answer pairs from Documents and books, providing detailed feedback, and grading responses. By integrating this state-of-the-art model, I ensure high accuracy and contextual relevance in automated question-answer generation, making it an invaluable tool for educational platforms and training programs. My approach not only streamlines the assessment process but also enhances learning outcomes by delivering personalized feedback and precise grading</p>
+                        <a href="https://github.com/sultan7557"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+
+    <!-- -------------Contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>m.sultan2722@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+6285219220152</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100009537532697"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sultan_ali7557"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ali-sultan-04657b1aa/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sultan7557"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.upwork.com/freelancers/~01908710c8bfbb3b08"><i class="fa-brands fa-upwork"></i></a>
+
+                    </div>
+                    <a href="images/MUHAMMAD_ALI_SULTAN_Data_Science_CV.pdf" class="btn btn2" download>Donwload CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p> <i class="fa-solid fa-user"></i>Muhammad Ali Sultan Portofolio Website </i></p>
+    </div>
+
+
+<script>
+    const tabLinks = document.getElementsByClassName("tab-links");
+    const tabContents = document.getElementsByClassName("tab-contents");
+    let menuBar = document.getElementById("menuBar");
+
+    function openMenu(){
+        menuBar.style.right = "0";
+    }
+    function closeMenu(){
+        menuBar.style.right = "-200px";
+    }
+
+    function opentab(tabname){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        };
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        };
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwm4dWImJZHnCU9rnACtmsKU381GU25xxtD29DTSLQK80e1HXmAwS1Ac_TUScjJQpTH/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(()=>{
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
